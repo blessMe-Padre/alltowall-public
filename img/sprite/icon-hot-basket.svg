@@ -1,0 +1,10 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18" cy="18" r="18" fill="url(#basket_gradient)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9528 19.2401C14.9475 24.2358 18.3289 24.4279 18.5117 27.9825C20.7051 28.2707 27.0109 25.0043 24.3606 18.2794C24.3606 20.8733 22.4414 21.5458 21.0706 20.8733C19.1514 19.8166 20.1567 17.9912 20.8878 16.5502C22.4414 13.572 20.6137 9.34497 17.5064 8C19.6998 13.476 14.6734 14.7249 12.7542 18.0873C11.7489 19.8166 11.2006 23.7554 14.7648 26.7336C14.7648 26.7336 12.7542 22.6986 15.9528 19.2401Z" fill="white"/>
+<defs>
+<linearGradient id="basket_gradient" x1="0" y1="36" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#D95858"/>
+<stop offset="1" stop-color="#DE712B"/>
+</linearGradient>
+</defs>
+</svg>

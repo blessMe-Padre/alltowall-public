@@ -1,0 +1,195 @@
+/* @mixin viewport--md {
+  @media (min-width: $viewport--md) {
+    @content;
+  }
+}
+
+@mixin viewport--lg {
+  @media (min-width: $viewport--lg) {
+    @content;
+  }
+}
+
+@mixin viewport--xl {
+  @media (min-width: $viewport--xl) {
+    @content;
+  }
+}
+
+@mixin viewport--xxl {
+  @media (min-width: $viewport--xxl) {
+    @content;
+  }
+} */
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-Light"), local("mont-Light"), url("../fonts/mont-light.woff2") format("woff2"), url("../fonts/mont-light.woff") format("woff"); }
+
+@font-face {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-LightItalic"), local("mont-LightItalic"), url("../fonts/mont-lightitalic.woff2") format("woff2"), url("../fonts/mont-lightitalic.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-Regular"), local("mont-Regular"), url("../fonts/mont-regular.woff2") format("woff2"), url("../fonts/mont-regular.woff") format("woff"); }
+
+@font-face {
+  font-style: italic;
+  font-weight: 500;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-RegularItalic"), local("mont-RegularItalic"), url("../fonts/mont-regularitalic.woff2") format("woff2"), url("../fonts/mont-regularitalic.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-SemiBold"), local("mont-SemiBold"), url("../fonts/mont-semibold.woff2") format("woff2"), url("../fonts/mont-semibold.woff") format("woff"); }
+
+@font-face {
+  font-style: italic;
+  font-weight: 600;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-SemiBoldItalic"), local("mont-SemiBoldItalic"), url("../fonts/mont-semibolditalic.woff2") format("woff2"), url("../fonts/mont-semibolditalic.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-Bold"), local("mont-Bold"), url("../fonts/mont-bold.woff2") format("woff2"), url("../fonts/mont-bold.woff") format("woff"); }
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-BoldItalic"), local("mont-BoldItalic"), url("../fonts/mont-bolditalic.woff2") format("woff2"), url("../fonts/mont-bolditalic.woff") format("woff"); }
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-Heavy"), local("mont-Heavy"), url("../fonts/mont-heavy.woff2") format("woff2"), url("../fonts/mont-heavy.woff") format("woff"); }
+
+@font-face {
+  font-style: italic;
+  font-weight: 900;
+  font-family: "Mont";
+  font-display: swap;
+  src: local("mont-HeavyItalic"), local("mont-HeavyItalic"), url("../fonts/mont-heavyitalic.woff2") format("woff2"), url("../fonts/mont-heavyitalic.woff") format("woff"); }
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.text-wrapper a:not([class]) {
+  color: inherit;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: -0.02em;
+  color: #4f8cc8;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .text-wrapper a:not([class]):hover {
+    color: #4f8cc8;
+    border-bottom: 2px solid #73b8de; }
+
+.link-regular {
+  font-weight: 600;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: -0.02em; }
+  .link-regular:hover {
+    color: #4f8cc8; }
+  .link-regular--blue {
+    color: #4f8cc8;
+    border-bottom: 2px solid transparent; }
+    .link-regular--blue:hover {
+      color: #4f8cc8;
+      border-bottom: 2px solid #73b8de; }
+  .link-regular--dark {
+    color: #2e3346;
+    border-bottom: 2px solid #73b8de; }
+    .link-regular--dark:hover {
+      color: #4f8cc8;
+      border-bottom: 2px solid #4f8cc8; }
+
+.link-header {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #4f8cc8;
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid transparent; }
+  .link-header--blue {
+    color: #4f8cc8; }
+    .link-header--blue:hover {
+      color: #2e3346;
+      border-bottom: 2px solid #73b8de; }
+  .link-header--dark {
+    color: #2e3346; }
+    .link-header--dark:hover {
+      color: #4f8cc8;
+      border-bottom: 2px solid #73b8de; }
+
+.link.hassublist {
+  padding-right: 21px; }
+
+.link--important {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  color: #2e3346; }
+  .link--important svg {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    margin-right: 8px; }
+  .link--important:hover {
+    color: #70af60; }
+  @media (max-width: 1279px) {
+    .link--important svg {
+      margin-right: 4px; } }
+
+.link--gray {
+  color: #dee0e2; }
+  .link--gray:hover {
+    color: #767f86; }
+
+.link--tel {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px; }
+  .link--tel:hover {
+    color: #70af60; }
+
+.link--simple {
+  display: block;
+  line-height: 18px;
+  color: #a7adb8;
+  font-size: 11px;
+  font-weight: 500; }
+  .link--simple:hover {
+    color: #767f86; }
